@@ -1,0 +1,120 @@
+{
+  "champion_model": "GradientBoostingClassifier (EXP-10 / EXP-10B)",
+  "roc_auc": 0.783,
+  "pr_auc": 0.5664,
+  "exp10_f1_opt": {
+    "threshold": 0.61,
+    "tn": 5090,
+    "fp": 744,
+    "fn": 771,
+    "tp": 887,
+    "flagged_pct": 21.77
+  },
+  "exp10b_rec70": {
+    "threshold": 0.42,
+    "tn": 3944,
+    "fp": 1890,
+    "fn": 450,
+    "tp": 1208,
+    "flagged_pct": 41.35
+  },
+  "top10_importances_pct": {
+    "max_delinquency_months": 32.45,
+    "cumulative_delay_score": 17.39,
+    "pay_sep": 10.14,
+    "credit_utilization_sep": 3.62,
+    "bill_amt_sep_log": 2.49,
+    "delinquency_months_count": 2.48,
+    "bill_pca_1": 2.36,
+    "payment_to_bill_ratio_6m": 2.13,
+    "avg_pay_amt_6m_log": 2.13,
+    "avg_utilization_6m": 1.92
+  },
+  "sex_fairness": [
+    {
+      "Group": "Female",
+      "N": 4554,
+      "Base_Default_Rate": 0.2079,
+      "Flag_Rate": 0.3878,
+      "TPR_Recall": 0.7181,
+      "FPR": 0.3011,
+      "ROC_AUC": 0.7923
+    },
+    {
+      "Group": "Male",
+      "N": 2938,
+      "Base_Default_Rate": 0.242,
+      "Flag_Rate": 0.4534,
+      "TPR_Recall": 0.7426,
+      "FPR": 0.361,
+      "ROC_AUC": 0.7675
+    }
+  ],
+  "edu_fairness": [
+    {
+      "Group": "Graduate",
+      "N": 2620,
+      "Base_Default_Rate": 0.1805,
+      "Flag_Rate": 0.3527,
+      "TPR_Recall": 0.6702,
+      "FPR": 0.2827,
+      "ROC_AUC": 0.7644
+    },
+    {
+      "Group": "University",
+      "N": 3541,
+      "Base_Default_Rate": 0.2389,
+      "Flag_Rate": 0.4411,
+      "TPR_Recall": 0.7494,
+      "FPR": 0.3443,
+      "ROC_AUC": 0.7879
+    },
+    {
+      "Group": "High School",
+      "N": 1293,
+      "Base_Default_Rate": 0.2606,
+      "Flag_Rate": 0.4695,
+      "TPR_Recall": 0.7626,
+      "FPR": 0.3661,
+      "ROC_AUC": 0.7822
+    }
+  ],
+  "sex_tpr_gap": 2.45,
+  "sex_fpr_gap": 5.99,
+  "edu_tpr_gap": 9.24,
+  "edu_fpr_gap": 8.34,
+  "cluster_profiles": [
+    {
+      "cluster_k4": 2,
+      "Clients": 3615,
+      "Default_Rate": 0.6089,
+      "Avg_Limit": 89538.036,
+      "Avg_Util": 0.6108,
+      "Avg_Delinq": 4.5358
+    },
+    {
+      "cluster_k4": 3,
+      "Clients": 538,
+      "Default_Rate": 0.21,
+      "Avg_Limit": 212137.5465,
+      "Avg_Util": 0.0029,
+      "Avg_Delinq": 0.5706
+    },
+    {
+      "cluster_k4": 0,
+      "Clients": 11737,
+      "Default_Rate": 0.1913,
+      "Avg_Limit": 99304.7355,
+      "Avg_Util": 0.6562,
+      "Avg_Delinq": 0.3663
+    },
+    {
+      "cluster_k4": 1,
+      "Clients": 14075,
+      "Default_Rate": 0.1471,
+      "Avg_Limit": 242561.2789,
+      "Avg_Util": 0.0907,
+      "Avg_Delinq": 0.2839
+    }
+  ]
+}

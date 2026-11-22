@@ -1,0 +1,5 @@
+k,Init,n_init,Inertia_SSE,Silhouette_Score
+2,k-means++,10,100850.6,0.4566
+3,k-means++,10,70502.1,0.3513
+4,k-means++,10,54743.6,0.3781
+5,k-means++,10,43851.0,0.3629

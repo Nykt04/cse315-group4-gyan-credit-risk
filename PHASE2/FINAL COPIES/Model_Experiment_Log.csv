@@ -1,0 +1,14 @@
+Exp_ID,Model_Family,Iteration,Train_Val_Split,Hyperparameters,Threshold,Train_Accuracy,Val_Accuracy,Precision,Recall,F1_Score,ROC_AUC,PR_AUC
+EXP-01,Linear Regression (OLS LPM),Baseline,22473/7492 (75/25),LinearRegression(fit_intercept=True),0.5,0.8074,0.8079,0.6406,0.301,0.4095,0.7574,0.5239
+EXP-02,Linear Regression (Ridge L2),Tuned,22473/7492 (75/25),"Ridge(alpha=50.0), thr=0.3",0.3,0.7838,0.7799,0.5024,0.5657,0.5322,0.7577,0.524
+EXP-03,Discriminant Analysis (LDA),Baseline,22473/7492 (75/25),"LDA(solver='svd', shrinkage=None)",0.5,0.806,0.8058,0.5962,0.3794,0.4637,0.7574,0.5239
+EXP-04,Discriminant Analysis (Shrinkage LDA),Tuned,22473/7492 (75/25),"LDA(solver='lsqr', shrinkage='auto', priors=[0.5,0.5]), thr=0.61",0.61,0.7848,0.7816,0.506,0.5615,0.5323,0.7621,0.5103
+EXP-05,Logistic Regression,Baseline,22473/7492 (75/25),"LogisticRegression(C=1.0, class_weight=None)",0.5,0.8059,0.8095,0.6345,0.3287,0.4331,0.7593,0.5232
+EXP-06,Logistic Regression (Cost-Sensitive),Tuned,22473/7492 (75/25),"LogisticRegression(C=0.1, class_weight='balanced'), thr=0.6",0.6,0.787,0.784,0.5111,0.5567,0.5329,0.7627,0.5179
+EXP-07,Decision Tree (CART Unpruned),Baseline,22473/7492 (75/25),"DecisionTreeClassifier(max_depth=12, min_samples_leaf=5)",0.5,0.8571,0.7943,0.5489,0.3963,0.4602,0.7046,0.4583
+EXP-08,Decision Tree (CART Pruned),Tuned,22473/7492 (75/25),"DecisionTreeClassifier(max_depth=5, min_samples_leaf=60, class_weight='balanced'), thr=0.56",0.56,0.7897,0.7808,0.5044,0.5567,0.5292,0.7645,0.5263
+EXP-09,Random Forest Classifier,Tuned Ensemble,22473/7492 (75/25),"RandomForestClassifier(n_estimators=100, max_depth=6, min_samples_leaf=20, class_weight='balanced'), thr=0.61",0.61,0.8033,0.791,0.5265,0.5513,0.5386,0.7743,0.5505
+EXP-10,Gradient Boosting (GBDT),Tuned Champion (F1-Opt),22473/7492 (75/25),"GradientBoostingClassifier(n_estimators=150, lr=0.05, max_depth=4, subsample=0.8, balanced), thr=0.61",0.61,0.8148,0.7978,0.5438,0.535,0.5394,0.783,0.5664
+EXP-10B,Gradient Boosting (GBDT),Recall>=0.70 Policy,22473/7492 (75/25),"GradientBoostingClassifier(n_estimators=150, lr=0.05, max_depth=4, subsample=0.8, balanced), thr=0.42",0.42,0.7176,0.6877,0.3899,0.7286,0.508,0.783,0.5664
+EXP-11,Neural Network (MLP 1-Layer),Baseline,22473/7492 (75/25),"MLPClassifier(hidden=(32,), relu, alpha=1e-4, early_stopping=True)",0.5,0.8214,0.8171,0.6644,0.351,0.4594,0.7672,0.5402
+EXP-12,Neural Network (Deep MLP 2-Layer),Tuned,22473/7492 (75/25),"MLPClassifier(hidden=(64,32), relu, alpha=1e-3, early_stopping=True), thr=0.33",0.33,0.8011,0.7852,0.5138,0.5495,0.531,0.7661,0.5399

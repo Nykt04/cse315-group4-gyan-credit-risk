@@ -1,0 +1,23 @@
+Antecedent (IF),Consequent (THEN),Support,Confidence,Lift,Leverage,Conviction
+Delinq_Count>=3M AND Sep_Delay>=2M,Default_Next_Month=1,0.0478,0.734,3.3173,0.0334,2.9274
+Low_Pay_Ratio<10% AND Sep_Delay>=2M,Default_Next_Month=1,0.062,0.7221,3.2637,0.043,2.8024
+Sep_Delay>=2M,Default_Next_Month=1,0.0726,0.6954,3.1431,0.0495,2.5569
+Low_Limit_Q1<=50k AND Sep_Delay>=2M,Default_Next_Month=1,0.0304,0.6904,3.1205,0.0206,2.5156
+High_Util>=70% AND Sep_Delay>=2M,Default_Next_Month=1,0.0331,0.6753,3.052,0.0223,2.3983
+Delinq_Count>=3M AND Low_Pay_Ratio<10%,Default_Next_Month=1,0.0642,0.621,2.8069,0.0413,2.055
+Delinq_Count>=3M AND Low_Limit_Q1<=50k,Default_Next_Month=1,0.0355,0.6072,2.7442,0.0226,1.9825
+Delinq_Count>=3M,Default_Next_Month=1,0.0749,0.5998,2.7108,0.0473,1.9458
+Delinq_Count>=3M AND High_Util>=70%,Default_Next_Month=1,0.0333,0.5888,2.6611,0.0208,1.8938
+Low_Limit_Q1<=50k AND Low_Pay_Ratio<10%,Default_Next_Month=1,0.0587,0.3553,1.6057,0.0222,1.2079
+High_Util>=70% AND Low_Limit_Q1<=50k,Default_Next_Month=1,0.0361,0.344,1.5549,0.0129,1.1872
+Sep_Delay_1M,Default_Next_Month=1,0.0416,0.3403,1.5382,0.0146,1.1805
+Low_Limit_Q1<=50k,Default_Next_Month=1,0.0814,0.3179,1.4366,0.0247,1.1416
+High_Util>=70% AND Low_Pay_Ratio<10%,Default_Next_Month=1,0.0659,0.3068,1.3864,0.0184,1.1233
+High_Util>=70%,Default_Next_Month=1,0.0726,0.3007,1.3593,0.0192,1.1137
+Low_Pay_Ratio<10%,Default_Next_Month=1,0.1431,0.2755,1.2454,0.0282,1.0749
+Edu_HighSchool,Default_Next_Month=1,0.0413,0.2517,1.1375,0.005,1.0407
+High_Limit_Q4>240k AND Revolving_OnTime,Non_Default=0,0.171,0.9068,1.1644,0.0241,2.373
+Revolving_OnTime,Non_Default=0,0.5869,0.8829,1.1337,0.0692,1.889
+Low_Pay_Ratio<10% AND Revolving_OnTime,Non_Default=0,0.2703,0.88,1.13,0.0311,1.8434
+Edu_HighSchool AND Revolving_OnTime,Non_Default=0,0.0887,0.8714,1.119,0.0094,1.721
+High_Limit_Q4>240k,Non_Default=0,0.2027,0.8604,1.1049,0.0192,1.5854

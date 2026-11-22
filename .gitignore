@@ -1,0 +1,28 @@
+# Office lock files & Python cache
+~$*
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large auto-generated CSV datasets (recreated automatically by Phase 1 pipeline)
+PHASE1/UCI_Credit_Card_*.csv
+
+# Old root-folder Phase 1 drafts
+/G-Yan!_Phase1_BusinessAndDataUnderstanding.docx
+/Group 4_G -Yan! _Phase1 _Preprocessing_Pipeline.py
+/Group4_G-Yan!_Phase1!_Phase1_Preprocessing.docx
+/Group4_G_Yan!_Phase1!_Phase1_Preprocessing_Colab.ipynb
+
+# Old Phase 1 & Phase 2 drafts outside FINAL COPIES
+PHASE1/Group 4_G -Yan! _Phase1 _Preprocessing_Pipeline.py.py
+PHASE1/Group1_Phase1_Preprocessing_Colab.ipynb
+PHASE1/Group4_G-Yan!_Phase1_Preprocessing-Report.pdf
+PHASE2/Group4_G-Yan!_Phase1-2_Preprocessing-Report.pdf
+PHASE2/Group4_G-Yan!_Phase1-2_Preprocessing.docx
+
+# Duplicate Phase 3 copies & internal presenter script (keep charts & metrics JSON)
+PHASE3/Group4_G-Yan!_Phase3_5Min_Presentation_Script.pdf
+PHASE3/Group4_G-Yan!_Phase3_Comprehensive_Final_Report.docx
+PHASE3/Group4_G-Yan!_Phase3_Visualization_Portfolio_Deck.pdf
+PHASE3/Group4_G-Yan!_Phase3_Visualization_Portfolio_Deck.pptx
+PHASE3/FINAL COPIES/*_UPDATED.pptx
